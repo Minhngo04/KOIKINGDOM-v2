@@ -1,0 +1,47 @@
+@import '/src/Component/Variables.scss';
+
+.introduce_2 {
+    background-color: var(--background-1); // Màu nền tùy chỉnh
+    font-family: var(--font-family-1);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.imgslide {
+    width: 31rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    background: #F45B69;
+    width: 52px; // Đồng nhất kích thước
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+
+    &:hover {
+        background-color: #F13030;
+    }
+
+    .icon {
+        color: #ffffff;
+    }
+}
+
+// Nút prev
+.swiper-button-prev {
+    left: 13px; // Đảm bảo nút prev căn chỉnh phù hợp
+}
+
+// Nút next
+.swiper-button-next {
+    right: 20px; // Đảm bảo nút next căn chỉnh phù hợp
+}

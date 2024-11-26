@@ -1,0 +1,21 @@
+@import '/src/Component/Variables.scss';
+
+.navigationButton {
+    border-radius: 2.5rem; // 25px -> 2.5rem (nếu cần đổi sang rem)
+    min-height: 2.7rem; // 27px -> 2.7rem
+    cursor: pointer;
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    background-color: transparent;
+    color: var(--buttonTextColor);
+    border: 2px solid transparent; // Viền mặc định trong suốt
+    transition: border-color 0.3s ease; // Hiệu ứng chuyển đổi mượt mà
+}
+
+.navigationButton:hover {
+    background-color: #F45B69;
+}
+
+.navigationButton.active {
+    background-color: #F13030;
+}

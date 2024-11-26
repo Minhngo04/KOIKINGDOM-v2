@@ -1,0 +1,70 @@
+@import '/src/Component/Variables.scss';
+$color_1: rgba(246, 232, 234, 1);
+$font-family_1: Inter, sans-serif;
+$background-color_1: rgba(34, 24, 28, 1);
+
+html {
+    font-size: var(--base-font-size); // Base font size cần đặt trong `:root`
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family_1;
+    color: $color_1;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.navigationWrapper {
+    background-color: $background-color_1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem; // 16px -> 1.6rem
+}
+
+.navigationContent {
+    display: flex;
+    margin-left: 1.4rem; // 14px -> 1.4rem
+    width: 100%;
+    max-width: 114.9rem; // 1149px -> 114.9rem
+    gap: 2rem; // 20px -> 2rem
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+
+}
+
+.logoSection {
+    background-color: $background-color_1;
+    display: flex;
+    height: 36rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4.8rem; // 48px -> 4.8rem
+}
+
+.logoContainer {
+    display: flex;
+    width: 31.7rem; // 317px -> 31.7rem
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    aspect-ratio: 1.19;
+    object-fit: contain;
+    object-position: center;
+    width: 23.3rem; // 233px -> 23.3rem
+    margin-left: 1.3rem; // 13px -> 1.3rem
+    max-width: 100%;
+}
+
+.brandName {
+    margin-top: 3.6rem; // 36px -> 3.6rem
+}
