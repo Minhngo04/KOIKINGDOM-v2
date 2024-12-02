@@ -1,0 +1,158 @@
+$primary-color: #f6e8ea;
+$secondary-color: #22181c;
+$accent-color: #5a0001;
+$button-color: #f45b69;
+$text-color: #22181c;
+@import '/src/Component/Variables.scss';
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+.tour-section {
+    width: 100%;
+    max-width: 1095px;
+    padding: 40px 20px;
+
+    .section-title {
+        color: $accent-color;
+        font: 400 48px Inter, sans-serif;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 80px 0;
+
+    .option-button {
+        background-color: $button-color;
+        color: var(--secondary-color);
+        padding: 19px 47px;
+        border: none;
+        cursor: pointer;
+        font: 16px Inter, sans-serif;
+    }
+}
+
+.form {
+    width: 100%;
+    max-width: 1066px;
+    margin: 0 auto;
+
+    .form-group {
+        margin-bottom: 50px;
+
+        .label {
+            display: block;
+            color: $text-color;
+            font: 14px Lato, sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .input,
+        .select {
+            width: 100%;
+            padding: 34px 26px;
+            border-radius: 15px;
+            border: 1px solid $button-color;
+            background-color: $primary-color;
+            color: $accent-color;
+            font: 14px Lato, sans-serif;
+        }
+
+        .date-container {
+            display: flex;
+            gap: 26px;
+
+            .date-wrapper {
+                flex: 1;
+                position: relative;
+
+                .date-input {
+                    width: 100%;
+                    padding: 26px 36px;
+                    border-radius: 8px;
+                    border: 1px solid $button-color;
+                    background-color: $primary-color;
+                    color: $accent-color;
+                    font: 14px Lato, sans-serif;
+                }
+
+                .calendar-icon {
+                    position: absolute;
+                    right: 36px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 21px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .submit-button {
+        width: 100%;
+        max-width: 925px;
+        margin: 54px auto;
+        display: block;
+        padding: 23px;
+        background-color: $accent-color;
+        color: var(--secondary-color);
+        border: none;
+        font: 16px Inter, sans-serif;
+        cursor: pointer;
+    }
+}
+
+.footer {
+    background-color: $secondary-color;
+    padding: 57px 66px;
+    color: $primary-color;
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    h3 {
+        font: 600 16px Inter, sans-serif;
+        margin-bottom: 36px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 35px;
+
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                font: 400 14px Inter, sans-serif;
+            }
+        }
+    }
+
+    .social-section {
+        .social-icons {
+            display: flex;
+            gap: 10px;
+
+            .social-icon {
+                width: 29px;
+                height: 29px;
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+.container {
+    background-color: #f6e8ea;
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    position: relative;
+}
+
+.header {
+    background-color: #22181c;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: #f6e8ea;
+    text-align: center;
+    padding: 3.7rem 7rem 2rem;
+    font: 700 1.6rem Inter, sans-serif;
+    z-index: 100;
+}
+
+.navigation {
+    display: flex;
+    margin-left: 1.4rem;
+    width: 100%;
+    max-width: 114.9rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-link {
+    align-self: stretch;
+    border-radius: 2.5rem;
+    min-height: 2.7rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: rgba(241, 48, 48, 0.8);
+    }
+}
+
+.nav-link-active {
+    @extend .nav-link;
+    background-color: #f13030;
+}
+
+.banner {
+    background-color: #22181c;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: #f6e8ea;
+    text-align: center;
+    padding: 5.6rem 8rem 9.3rem;
+    font: 700 4.8rem Inter, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    width: 31.7rem;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    aspect-ratio: 1.19;
+    object-fit: contain;
+    object-position: center;
+    width: 23.3rem;
+    margin-left: 1.3rem;
+    max-width: 100%;
+}
+
+.brand-name {
+    margin-top: 3.6rem;
+}
+
+.page-title {
+    color: #5a0001;
+    text-align: center;
+    align-self: center;
+    margin: 10.5rem 0 0 2.6rem;
+    font: var(--font-title);
+}
+
+.tour-types {
+    align-self: center;
+    display: flex;
+    max-width: 100%;
+    gap: 4rem 10rem;
+    color: #ffffff;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin: 6.8rem 0 0 2.7rem;
+    font: 700 1.6rem Inter, sans-serif;
+}
+
+.tour-type-button {
+    background-color: #5a0001;
+    padding: 1.9rem 4.7rem;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    @media (max-width: 99.1rem) {
+        padding: 1.9rem 2rem;
+    }
+
+    &:hover {
+        background-color: #450001;
+    }
+}
+
+.main-content {
+    align-self: center;
+    margin-top: 12.5rem;
+    width: 100%;
+    max-width: 135.2rem;
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+    position: relative;
+    padding-bottom: 3.7rem;
+}
+
+.filters {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+}
+
+.tour-grid {
+    width: 88rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.price-filter,
+.date-filter {
+    border-radius: 1.2rem;
+    background-color: #f6e8ea;
+    padding: 2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.27);
+}
+
+.filter-title {
+    color: #5a0001;
+    font: 700 2.4rem Inter, sans-serif;
+}
+
+.range-slider {
+    margin-top: 4.5rem;
+}
+
+.slider-track {
+    position: relative;
+    height: 0.8rem;
+    background-color: #5a0001;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.slider-handle {
+    position: absolute;
+    width: 2.9rem;
+    height: 2.9rem;
+    background-color: #f13030;
+    border: 0.4rem solid #22181c;
+    border-radius: 50%;
+    top: -1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:first-child {
+        left: 0;
+    }
+
+    &:last-child {
+        right: 0;
+    }
+}
+
+.range-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #22181c;
+    font: 400 1.6rem Inter, sans-serif;
+}
+
+.date-input {
+    border-radius: 0.8rem;
+    background-color: #f6e8ea;
+    box-shadow: 0px 0px 1.4rem rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.1rem 2.8rem;
+    border: 0.3rem solid #f45b69;
+    color: rgba(60, 60, 60, 0.5);
+    font: 1.4rem Lato, sans-serif;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+        border-color: #f13030;
+    }
+}

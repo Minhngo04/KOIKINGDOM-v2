@@ -36,7 +36,12 @@ html {
     margin-top: 3rem;
     margin-bottom: 3rem;
     justify-content: space-between;
+    margin: 4rem auto;
+}
 
+.button {
+    display: flex;
+    gap: 8rem;
 }
 
 .logoSection {
@@ -57,14 +62,31 @@ html {
 }
 
 .logo {
+    display: flex;
+    margin: 7rem auto;
     aspect-ratio: 1.19;
     object-fit: contain;
     object-position: center;
     width: 23.3rem; // 233px -> 23.3rem
     margin-left: 1.3rem; // 13px -> 1.3rem
     max-width: 100%;
+    user-select: none;
 }
 
-.brandName {
-    margin-top: 3.6rem; // 36px -> 3.6rem
+.brandName {}
+
+.userPanel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .userIcon {
+        font-size: 24px;
+        color: #333; // Màu tùy chỉnh
+    }
+
+    .userLabel {
+        font-size: 16px;
+        color: #555; // Màu tùy chỉnh
+    }
 }

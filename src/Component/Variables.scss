@@ -2,7 +2,13 @@
 :root {
     --base-font-size: 62.5%;
     /* 1rem = 10px */
-    --background-1: #F6E8EA;
+    --main-background: #F6E8EA;
     --font-family-1: "Inter", "Helvetica Neue", Arial, sans-serif;
-
+    --buttonTextColor: #F6E8EA;
+    --secondary-color: rgb(90, 0, 1);
+    --text-color: rgb(90, 0, 1);
+    --border-color: rgb(244, 91, 105);
+    --font-size-label: 20px;
+    --font-size: 15px;
+    --font-title: 400 3.4rem Inter, sans-serif
 }

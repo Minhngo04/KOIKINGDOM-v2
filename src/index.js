@@ -6,14 +6,14 @@ import Header from '../src/Component/User/Header'
 import reportWebVitals from './reportWebVitals';
 import HomePage from './Component/User/HomePage';
 import { Footer } from './Component/User/Footer';
-
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './Layout';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Header />
-    <HomePage />
-    <Footer />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Layout />
+
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,36 @@
+.userPanel {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .userBrand {
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .userDropdown {
+        position: absolute;
+        top: 100%;
+        right: -65px;
+        background-color: #22181C; // Màu nền dropdown
+        border: 1px solid #F45B69;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        z-index: 10;
+        user-select: none;
+
+        .userDropdownItem {
+            padding: 8px 16px;
+            cursor: pointer;
+            color: #F6E8EA;
+
+            &:hover {
+                background-color: #5A0001;
+            }
+        }
+    }
+}
