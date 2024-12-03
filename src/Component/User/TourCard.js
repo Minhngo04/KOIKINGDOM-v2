@@ -1,7 +1,7 @@
 import React from 'react';
 import './TourCard.scss';
 
-export const TourCard = ({ price, name, rating, duration, startDate, endDate, image, isBestSeller }) => {
+const TourCard = ({ price, name, rating, duration, startDate, endDate, image, isBestSeller }) => {
     return (
         <div className="tour-card">
             <img loading="lazy" src={image} alt={`Tour of ${name}`} className="tour-image" />

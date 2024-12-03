@@ -1,7 +1,7 @@
 import React from 'react';
-import { TourCard } from './TourCard';
-import { FilterSection } from './FilterSection';
-import { CheckboxGroup } from './CheckboxGroup';
+import TourCard from './TourCard';
+import FilterSection from './FilterSection';
+import CheckboxGroup from './CheckboxGroup';
 import './BookingPage.scss';
 import { useNavigate } from 'react-router-dom';
 
@@ -122,7 +122,7 @@ const tours = [
 const farmOptions = ["name checkbox", "name checkbox", "name checkbox"];
 const koiTypeOptions = ["name checkbox", "name checkbox", "name checkbox"];
 
-export const BookingPage = () => {
+const BookingPage = () => {
     const navigate = useNavigate();  // Hook to navigate between pages
 
     const handleNavigation = (type) => {

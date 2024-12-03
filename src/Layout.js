@@ -7,6 +7,7 @@ import BookingPage from './Component/User/BookingPage.js';
 import HomePage from './Component/User/HomePage.js'
 import CustomTourPage from './Component/User/CustomTourPage.js';
 import OrderKoiPage from './Component/User/OrderKoi.js';
+import MyProfile from './Component/User/Profile.js';
 const NotFound = () => {
     return (
         <div className='container mt-3 alert alert-danger'>
@@ -24,6 +25,7 @@ const Layout = (props) => {
                     <Route path="available-tour" element={<BookingPage />} />
                     <Route path="custom-tour" element={<CustomTourPage />} />
                     <Route path="koiOrder" element={<OrderKoiPage />} />
+                    <Route path="myProfile" element={<MyProfile />} />
                 </Route>
             </Routes>
         </>

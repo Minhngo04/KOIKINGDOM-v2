@@ -1,7 +1,7 @@
 import React from 'react';
 import './FilterSection.scss';
 
-export const FilterSection = ({ title, children }) => {
+const FilterSection = ({ title, children }) => {
     return (
         <div className="filter-section">
             <div className="filter-header">

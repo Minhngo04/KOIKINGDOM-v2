@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './FooterLinks.scss';
+import './FooterLinks.scss';
 
-export const SocialLinks = () => {
+const SocialLinks = () => {
     const socialIcons = [
         { src: "https://cdn.builder.io/api/v1/image/assets/28ba4404306d44e793d93f465a1a0e87/5d7857fc5fe49213ec2404b2bd40d049d03324270c0739c8b7894c59cb6c78b8?apiKey=28ba4404306d44e793d93f465a1a0e87&", alt: "Social media icon 1" },
         { src: "https://cdn.builder.io/api/v1/image/assets/28ba4404306d44e793d93f465a1a0e87/3aa208f116ebf54d36797abd57778c0e7716e69dd4ca783c6400b5f937f6c3af?apiKey=28ba4404306d44e793d93f465a1a0e87&", alt: "Social media icon 2" },

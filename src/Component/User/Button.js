@@ -1,7 +1,7 @@
 import React from 'react';
 import './CustomTourForm.scss';
 
-export const Button = ({ children, variant = 'primary', onClick, type = 'button' }) => {
+const Button = ({ children, variant = 'primary', onClick, type = 'button' }) => {
     return (
         <button
             className={`button ${variant}`}

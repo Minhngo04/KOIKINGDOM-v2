@@ -1,7 +1,7 @@
 import React from 'react';
 import './OrderKoi.scss';
 
-export const KoiCard = ({ price, name, rating, type, weight, height, age, imageUrl }) => {
+const KoiCard = ({ price, name, rating, type, weight, height, age, imageUrl }) => {
     return (
         <div className="koi-card">
             <img loading="lazy" src={imageUrl} alt={`${type} koi fish`} className="koi-image" />

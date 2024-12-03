@@ -1,5 +1,4 @@
 import React from 'react';
-import { CustomTourForm } from './CustomTourForm';
 import './CustomTourPage.scss';
 
 export const CustomTourPage = () => {
@@ -13,4 +12,4 @@ export const CustomTourPage = () => {
         </div>
     );
 }
-export default CustomTourForm;
+export default CustomTourPage;

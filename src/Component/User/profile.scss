@@ -1,0 +1,124 @@
+.profile {
+    &-container {
+        gap: 20px;
+        display: flex;
+    }
+
+    &-sidebar {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 23%;
+        margin-left: 0;
+
+        &__content {
+            border-radius: 10px;
+            background-color: #F6E8EA;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            color: rgba(0, 0, 0, 1);
+            text-align: center;
+            width: 100%;
+            padding: 58px 41px 115px;
+            font: 700 24px Inter, sans-serif;
+        }
+
+        &__image {
+            width: 67%;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        &__username {
+            margin: 19px auto;
+
+        }
+
+        &__nav-item {
+            margin: 15px auto;
+        }
+    }
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 77%;
+        margin-left: 20px;
+
+        &__content {
+            border-radius: 10px;
+            background-color: #F6E8EA;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        &__form {
+            display: flex;
+            width: 803px;
+            max-width: 100%;
+            flex-direction: column;
+        }
+
+        &__title {
+            color: rgba(0, 0, 0, 1);
+            font: 700 42px Inter, sans-serif;
+            margin-bottom: 40px;
+        }
+
+        &__edit-button {
+            background-color: rgba(0, 0, 0, 1);
+            margin-top: 82px;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            padding: 19px 70px;
+            font: 700 40px Inter, sans-serif;
+            border: none;
+            cursor: pointer;
+
+            @media (max-width: 991px) {
+                max-width: 100%;
+                margin-top: 40px;
+                padding: 0 20px;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            &:focus {
+                outline: 2px solid #F6E8EA;
+                outline-offset: 2px;
+            }
+        }
+    }
+
+    &-field {
+        display: flex;
+        align-items: flex-start;
+        gap: 1px;
+        margin-bottom: 20px;
+
+        &__label {
+            position: relative;
+            top: -27px;
+            background-color: #F6E8EA;
+            font-size: 13px;
+        }
+
+        &__border {
+            width: 95.8%;
+            padding: 2%;
+            border-left: 1px solid;
+            border-right: 1px solid;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+    }
+}

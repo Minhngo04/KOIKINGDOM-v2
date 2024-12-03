@@ -1,7 +1,7 @@
 import React from 'react';
 import './FooterLinks.scss';
 
-export const FooterLinks = ({ title, links }) => {
+const FooterLinks = ({ title, links }) => {
     return (
         <nav className="linkGroup">
             <h3 className="linkTitle">{title}</h3>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './OrderKoi.scss';
 
-export const RangeFilter = ({ title, min, max }) => {
+const RangeFilter = ({ title, min, max }) => {
     return (
         <div className="filter-container">
             <div className="filter-title">{title}</div>

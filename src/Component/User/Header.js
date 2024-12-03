@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavigationButton } from '../User/NavigationButton';
-import { UserPanel } from '../User/UserPanel';
+import NavigationButton from '../User/NavigationButton';
+import UserPanel from '../User/UserPanel';
 import './Header.scss';
 import { FaRegUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ import koiicon from '../Picture/koi-icon.png';
 const navigationItems = ['Home', 'Booking', 'Information'];
 const UserItem = ['MyProfile', 'Add To Cart', 'Farourite', 'HistoryOrder'];
 
-export const Header = () => {
+const Header = () => {
     return (
         <header className="headerContainer">
             <nav className="navigationWrapper">

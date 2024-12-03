@@ -1,7 +1,7 @@
 import React from 'react';
 import './CustomTourForm.scss';
 
-export const DatePicker = ({ label, icon, value, onChange }) => {
+const DatePicker = ({ label, icon, value, onChange }) => {
     return (
         <div className="date-picker-container">
             <div className="date-picker-label">{label}</div>

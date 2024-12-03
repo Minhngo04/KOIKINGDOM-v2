@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Button } from './Button.js';
-import { Checkbox } from './Checkbox.js';
-import { DatePicker } from './DatePicker.js';
+import Button from './Button.js';
+import Checkbox from './Checkbox.js';
+import DatePicker from './DatePicker.js';
 import { useNavigate } from 'react-router-dom';
 
 import './CustomTourForm.scss';
@@ -17,7 +17,7 @@ const koiTypes = Array(5).fill().map((_, index) => ({
     label: 'name checkbox'
 }));
 
-export const CustomTourForm = () => {
+const CustomTourForm = () => {
     const [formData, setFormData] = useState({
         fullName: '',
         startDate: '',
@@ -75,7 +75,7 @@ export const CustomTourForm = () => {
     return (
         <>
             <form className="form-container" onSubmit={handleSubmit}>
-                <h1 className="form-title">CUSTOM TOUR</h1>
+                <h1 className="page-title">CUSTOM TOUR</h1>
 
                 <div className="tour-types">
                     <button className="tour-type-button" onClick={() => handleNavigation('available')}>Available Tour</button>
@@ -169,3 +169,5 @@ export const CustomTourForm = () => {
         </>
     );
 };
+
+export default CustomTourForm;

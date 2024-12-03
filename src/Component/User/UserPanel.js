@@ -1,9 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './UserPanel.scss'
+import { useNavigate } from 'react-router-dom';
 
-export const UserPanel = ({ brand, userItem }) => {
+const UserPanel = ({ brand, userItem }) => {
     const [isDropDownMenu, setIsDropDownMenu] = useState(false);
     const dropdownRef = useRef(null);
+    const navigate = useNavigate();
+
+    const handleNavigation = (type) => {
+        switch (type) {
+            case 'profile':
+                navigate('/myProfile')
+                break;
+        }
+    }
 
     const toggleDropDown = () => {
         setIsDropDownMenu((prev) => !prev);
@@ -35,7 +45,7 @@ export const UserPanel = ({ brand, userItem }) => {
                 <ul className="userDropdown" ref={dropdownRef}>
                     {userItem.map((item, index) => (
                         <li key={index} className="userDropdownItem">
-                            {item}
+                            <button onClick={() => handleNavigation('profile')}>{item}</button>
                         </li>
                     ))}
                 </ul>

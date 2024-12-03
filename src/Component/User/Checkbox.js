@@ -1,7 +1,7 @@
 import React from 'react';
 import './CustomTourForm.scss';
 
-export const Checkbox = ({ label, id, checked, onChange }) => {
+const Checkbox = ({ label, id, checked, onChange }) => {
     return (
         <div className="checkbox-container-customer">
             <div className="checkbox-wrapper">

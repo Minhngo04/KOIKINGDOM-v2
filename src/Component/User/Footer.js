@@ -1,9 +1,10 @@
 import React from 'react';
 import './Footer.scss';
-import { FooterLinks } from './FooterLinks.js';
-import { SocialLinks } from './SocialLinks.js';
+import FooterLinks from './FooterLinks.js';
+import SocialLinks from './SocialLinks.js';
 
-export const Footer = () => {
+
+const Footer = () => {
     let categoryLinks = ["Famous Tours", "Available Tours", "Koi Farms", "Popular Koi Breeds", "Koi Species"];
     let serviceLinks = ["My Profile", "Order history", "Notifications", "Shopping cart", "Chat with us"];
     let informationLinks = ["FAQs", "Articles", "About us", "Contact us"];

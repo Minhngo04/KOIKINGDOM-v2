@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import "./HomePage.scss";
 import SwiperSlideFunc from './SwiperSlide';
 
-export const HomePage = () => {
+const HomePage = () => {
     let images_tour = [img_koitour, img_koitour, img_koitour, img_koitour, img_koitour, img_koitour, img_koitour, img_koitour];
     let images_koifish = [img_koifish, img_koifish, img_koifish, img_koifish, img_koifish, img_koifish, img_koifish, img_koifish];
     let text_tour = "Best Tour Available seller";
