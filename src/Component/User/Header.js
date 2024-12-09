@@ -1,13 +1,13 @@
 import React from 'react';
-import NavigationButton from '../User/NavigationButton';
-import UserPanel from '../User/UserPanel';
+import NavigationButton from '../User/Booking/NavigationButton';
+import UserPanel from '../User/Profile/UserPanel';
+import ProfileSidebar from '../User/Profile/ProfileSidebar'
 import './Header.scss';
-import { FaRegUser } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import koiicon from '../Picture/koi-icon.png';
 
 const navigationItems = ['Home', 'Booking', 'Information'];
-const UserItem = ['MyProfile', 'Add To Cart', 'Farourite', 'HistoryOrder'];
 
 const Header = () => {
     return (
@@ -27,9 +27,10 @@ const Header = () => {
                     </div>
                     <div className="userPanelWrapper">
                         <UserPanel
-                            brand={<FaRegUser />}
-                            userItem={UserItem}
+                            brand={<FaRegUserCircle />}
+                            username="Minhngo"
                         />
+
                     </div>
                 </div>
             </nav>

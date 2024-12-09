@@ -1,6 +1,6 @@
 import React from 'react';
 import KoiCard from './KoiCard';
-import RangeFilter from './RangeFilter';
+import RangeFilter from '../Booking/RangeFilter';
 import './OrderKoi.scss';
 import { useNavigate } from 'react-router-dom';
 

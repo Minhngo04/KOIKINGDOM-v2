@@ -1,5 +1,4 @@
 import React from 'react';
-import './OrderKoi.scss';
 
 const RangeFilter = ({ title, min, max }) => {
     return (
@@ -8,7 +7,6 @@ const RangeFilter = ({ title, min, max }) => {
             <div className="range-slider">
                 <div className="slider-track">
                     <div className="slider-handle" />
-                    <div className="slider-bar" />
                     <div className="slider-handle" />
                 </div>
                 <div className="range-values">

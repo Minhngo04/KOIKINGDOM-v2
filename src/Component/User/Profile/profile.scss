@@ -1,0 +1,314 @@
+$primary-color: rgba(246, 232, 234, 1);
+$secondary-color: rgba(34, 24, 28, 1);
+$accent-color: rgba(244, 91, 105, 1);
+$text-color: rgba(255, 255, 255, 1);
+$border-color: rgba(0, 0, 0, 1);
+
+.profile-page {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-page {
+    background-color: $secondary-color;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    color: $primary-color;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 28px 80px 10px;
+    font: 700 16px Inter, sans-serif;
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 40px 48px;
+    }
+
+    .brand {
+        font-size: 29px;
+        align-self: stretch;
+        flex-basis: auto;
+        margin: auto 0;
+    }
+
+    .booking-wrapper {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        font-size: 19px;
+    }
+
+    .booking-container {
+        display: flex;
+        gap: 7px;
+        padding: 12px 9px 12px 21px;
+        border: 1px solid $primary-color;
+    }
+
+    .booking-text {
+        flex-grow: 1;
+    }
+
+    .booking-icon {
+        aspect-ratio: 2;
+        object-fit: contain;
+        object-position: center;
+        width: 16px;
+        margin: auto 0;
+    }
+
+    .nav-button {
+        align-self: stretch;
+        border-radius: 25px;
+        min-height: 27px;
+        gap: 10px;
+        white-space: nowrap;
+        margin: auto 0;
+        padding: 4px 10px;
+        background: transparent;
+        color: $primary-color;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .profile-icon {
+        aspect-ratio: 1.69;
+        object-fit: contain;
+        object-position: center;
+        width: 78px;
+        align-self: start;
+    }
+}
+
+.carousel-banner {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    padding: 62px 80px 100px;
+
+    .banner-image {
+        aspect-ratio: 0.89;
+        object-fit: contain;
+        width: 246px;
+    }
+}
+
+.main-content {
+    .content-grid {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 20px;
+        padding-bottom: 3.7rem;
+
+        /* Tăng kích thước chiều dài */
+        width: 100%;
+        /* Cho phép chiếm toàn bộ không gian */
+        max-width: 1600px;
+        /* Tăng chiều dài tổng */
+        margin: 0 auto;
+        /* Căn giữa container */
+    }
+}
+
+
+.sidebar {
+    .sidebar-content {
+        background-color: $primary-color;
+        border-radius: 10px;
+        padding: 41px 44px 78px;
+        border: 1px solid $border-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-user {
+        font-size: 32px;
+    }
+
+    .profile-image {
+        aspect-ratio: 0.94;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: center;
+        color: $accent-color;
+        font: 700 24px Inter, sans-serif;
+        background: transparent;
+        border: none;
+        padding: 15px 0;
+        cursor: pointer;
+        margin-top: 20px;
+
+        &:hover {
+            background-color: rgba(244, 91, 105, 0.1);
+        }
+    }
+}
+
+.profile-form {
+    background-color: $primary-color;
+    border-radius: 10px;
+    padding: 92px 80px;
+    border: 1px solid $border-color;
+    width: 81%;
+
+    .form-title {
+        color: $border-color;
+        font-size: 42px;
+        margin-left: 17px;
+        margin-bottom: 52px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .input-wrapper {
+        flex: 1;
+        position: relative;
+        border: 1px solid $border-color;
+        padding: 20px 11px;
+
+        .input-label {
+            position: absolute;
+            top: -8px;
+            left: 7px;
+            background-color: $primary-color;
+            padding: 0 7px;
+            color: $accent-color;
+            font: 700 21px Inter, sans-serif;
+        }
+
+        .input-field {
+            width: 100%;
+            border: none;
+            background: transparent;
+            font: 400 16px Inter, sans-serif;
+            padding: 8px 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .submit-button {
+        background-color: rgba(241, 48, 48, 1);
+        width: 100%;
+        color: $text-color;
+        font-size: 40px;
+        padding: 29px 70px;
+        border: none;
+        cursor: pointer;
+        margin-top: 71px;
+
+        &:hover {
+            background-color: darken(rgba(241, 48, 48, 1), 10%);
+        }
+    }
+}
+
+.footer {
+    background-color: $secondary-color;
+    display: flex;
+    margin-top: 245px;
+    width: 100%;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 58px 68px;
+    color: $primary-color;
+    font: 400 14px Inter, sans-serif;
+
+    .section-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .links-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-link {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 11px;
+        margin-top: 19px;
+
+        .social-icon {
+            width: 31px;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header-page {
+        padding: 20px;
+    }
+
+    .carousel-banner {
+        padding: 20px;
+    }
+
+    .main-content {
+        padding-bottom: 3.7rem;
+
+        .content-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .profile-form {
+        padding: 40px 20px;
+
+        .form-row {
+            flex-direction: column;
+        }
+
+        .submit-button {
+            padding: 20px;
+            font-size: 32px;
+        }
+    }
+
+    .footer {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

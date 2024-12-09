@@ -101,20 +101,21 @@
 }
 
 .tour-type-button {
-    background-color: #5a0001;
+    background-color: #F45B69;
     padding: 1.9rem 4.7rem;
     border: none;
     color: inherit;
     font: inherit;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 24rem;
 
     @media (max-width: 99.1rem) {
         padding: 1.9rem 2rem;
     }
 
     &:hover {
-        background-color: #450001;
+        background-color: #F13030;
     }
 }
 
