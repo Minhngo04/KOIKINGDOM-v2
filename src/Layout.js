@@ -5,8 +5,9 @@ import BookingPage from './Component/User/Booking/BookingPage.js';
 import HomePage from './Component/User/HomePage.js';
 import CustomTourPage from './Component/User/Booking/CustomTourPage.js';
 import OrderKoiPage from './Component/User/Booking/OrderKoi.js';
-import MyProfile from './Component/User/Profile/Profile.js';
-import AddToCard from './Component/User/Profile/AddToCard.js';
+import MyProfile from './Component/User/Profile/MyProfile/Profile.js';
+import MyCard from './Component/User/Profile/MyCard.js';
+import MyBooking from './Component/User/Profile/MyBooking/MyBooking.js'
 
 const NotFound = () => {
     return (
@@ -25,7 +26,8 @@ const Layout = () => {
                 <Route path="custom-tour" element={<CustomTourPage />} />
                 <Route path="koiOrder" element={<OrderKoiPage />} />
                 <Route path="myProfile" element={<MyProfile />} />
-                <Route path="myCard" element={<AddToCard />} />
+                <Route path="myCard" element={<MyCard />} />
+                <Route path="myBooking" element={<MyBooking />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>

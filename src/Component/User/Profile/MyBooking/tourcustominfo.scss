@@ -1,0 +1,30 @@
+.tour-custom-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 865px;
+    margin: 114px auto 0 auto;
+    border: 1px solid black;
+
+    .table-header,
+    .table-row {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+        border-bottom: 1px solid black;
+
+        .header-cell,
+        .cell {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

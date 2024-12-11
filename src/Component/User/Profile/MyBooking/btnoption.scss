@@ -1,0 +1,68 @@
+.my-booking {
+    width: 408px;
+    height: 66px;
+    left: 430px;
+    top: 60px;
+    position: absolute;
+    color: #22181C;
+    font-size: 42px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.btn {
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp các nút */
+    gap: 54px;
+    /* Đặt khoảng cách giữa các nút */
+    position: relative;
+    top: 102px;
+}
+
+
+.custom-tour-btn,
+.paid-tour-btn,
+.canceled-tour-btn,
+.completed-tours-btn {
+    width: 168px;
+    height: 57px;
+    background: #F45B69;
+    display: flex;
+    /* Bật flexbox */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.custom-tour-btn {
+    top: 188px;
+    background: #F45B69;
+}
+
+.paid-tour-btn {
+    top: 188px;
+    background: #F45B69;
+}
+
+.canceled-tour-btn {
+    top: 188px;
+    background: #F45B69;
+}
+
+.completed-tours-btn {
+    top: 188px;
+    background: #F45B69;
+}

@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 const ProfileSidebar = () => {
     const navigate = useNavigate();
     const menuItems = [
-        { label: 'Profile', id: 'profile-details' },
+        { label: 'Profile', id: 'profile-details', path: '/myProfile' },
         { label: 'Add To Cart', id: 'cart', path: '/myCard' },
         { label: 'Farourite', id: 'favorites' },
-        { label: 'My Booking', id: 'bookings' },
+        { label: 'My Booking', id: 'bookings', path: '/myBooking' },
         { label: 'My Koi Fish', id: 'koi' },
         { label: 'Change Password', id: 'password' }
     ];

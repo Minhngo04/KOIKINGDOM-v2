@@ -1,0 +1,120 @@
+.content-grid {
+    position: relative;
+}
+
+
+.mycard-form {
+    background-color: #F6E8EA;
+    border-radius: 10px;
+    padding: 79px 80px;
+    border: 1px solid #000000;
+    width: 81%;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+
+    .box {
+        position: relative;
+        border: 2px solid #22181C;
+        border-radius: 13px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        /* Để có thể di chuyển bằng transform */
+        transition: transform 0.3s ease-in-out;
+        /* Hiệu ứng mượt */
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .tour-info {
+                display: flex;
+                align-items: center;
+                flex: 2; // Chiếm 2 phần không gian
+
+
+                .tour-detail {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 2px; // Sát hình ảnh
+                    gap: 8px;
+
+                    .tour-name {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #22181C;
+                    }
+
+                    .tour-startdate,
+                    .tour-enddate,
+
+                    .tour-location {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #22181C;
+                    }
+                }
+            }
+
+            .count {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 36px; // Khoảng cách giữa các nút
+                background-color: #F6E8EA;
+                border-radius: 13px;
+                padding: 10px;
+                border: 1px solid #22181C;
+                flex: 1; // Chiếm 1 phần không gian
+
+                .minus {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 48px;
+                    height: 48px;
+                    cursor: pointer;
+                }
+
+                .number {
+                    text-align: center;
+                    font-size: 24px;
+                    font-family: Inter;
+                    font-weight: 400;
+                    color: #22181C;
+                }
+
+                .add {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 48px;
+                    height: 48px;
+                    cursor: pointer;
+                }
+
+            }
+
+            .tour-price {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+                color: #22181C;
+                flex: 1; // Chiếm 1 phần không gian
+            }
+
+            .close {
+                display: flex;
+                justify-content: center;
+                height: 129px;
+                cursor: pointer;
+                position: relative;
+                right: 14px
+            }
+        }
+    }
+}

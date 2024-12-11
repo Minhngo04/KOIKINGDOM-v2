@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../Profile/ProfileSidebar';
+import Sidebar from '../ProfileSidebar';
 import ProfileForm from './ProfileForm';
 import './profile.scss';
 
