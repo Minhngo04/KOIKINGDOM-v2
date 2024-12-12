@@ -1,0 +1,311 @@
+.outer-container {
+    width: 100vw;
+    /* Kích thước chiều rộng bằng với viewport */
+    height: 100vh;
+    /* Kích thước chiều cao bằng với viewport */
+    background-color: #F6E8EA;
+    /* Màu hồng nhạt */
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+
+/* login.scss */
+.login-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    position: relative;
+    align-items: center;
+}
+
+
+.auth-image {
+    width: 350px;
+    height: 500px;
+}
+
+.login-form-container {
+    width: 450px;
+    height: 500px;
+    background: #22181C;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 35px;
+    border-top-right-radius: 4px;
+    /* Áp dụng border-radius cho góc trên bên phải */
+    border-bottom-right-radius: 4px;
+    /* Áp dụng border-radius cho góc dưới bên phải */
+}
+
+.login-form {
+    width: 450px;
+    height: 500px;
+    position: relative;
+    // background-color: #22181C;
+}
+
+.form-header {
+    width: 450px;
+    height: 20px;
+    position: absolute;
+    left: 14.06px;
+    top: 306px;
+
+    .remember-me,
+    .forgot-password {
+        color: #F6E8EA;
+        font-size: 12px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        word-wrap: break-word;
+        position: absolute;
+    }
+
+    .remember-me {
+        width: 120px;
+        left: 40px;
+        top: 5px;
+    }
+
+    .forgot-password {
+        width: 150px;
+        left: 270px;
+        top: 5px;
+        text-align: right;
+    }
+
+    .separator-line {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border: 1px #F6E8EA solid;
+    }
+}
+
+.auth-logo {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-self: center;
+
+}
+
+.login-button {
+    width: 437px;
+    height: 35px;
+    position: absolute;
+    left: 6.06px;
+    top: 382px;
+    border-radius: 5px;
+    border: 1px #F6E8EA solid;
+    color: white;
+    font-size: 19px;
+    text-align: center
+}
+
+.login-title {
+    width: 100%;
+    position: absolute;
+    top: 137px;
+    text-align: center;
+    color: #F6E8EA;
+    font-size: 16px;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+}
+
+.email-input-group {
+    width: 404px;
+    height: 32px;
+    position: absolute;
+    left: 23.06px;
+    top: 172px;
+    border-bottom: 2px solid white;
+
+    .email-input {
+        width: 367px;
+        height: 25px;
+        color: white;
+        font-size: 20px;
+        background: #22181C;
+        position: absolute;
+        left: 29px;
+        outline: none;
+        border: none;
+    }
+
+    .input-icons {
+        width: 25px;
+        height: 20px;
+        position: absolute;
+
+        .icon-user {
+            color: white;
+        }
+    }
+
+    .email-label {
+        width: 100px;
+        position: absolute;
+        left: 36px;
+        top: 5px;
+        color: #F6E8EA;
+        font-size: 17px;
+        font-family: "Red Hat Display";
+        font-weight: 700;
+    }
+}
+
+.password-input-group {
+    width: 404px;
+    height: 32px;
+    position: absolute;
+    left: 23.06px;
+    top: 247px;
+    border-bottom: 2px solid white;
+
+    .password-input {
+        width: 367px;
+        height: 25px;
+        background: #22181C;
+        position: absolute;
+        left: 29px;
+        font-size: 20px;
+        color: white;
+        outline: none;
+        border: none;
+    }
+
+    .eye-icon-container {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .eye-icon {
+        color: white;
+        /* Đặt màu trắng cho icon mắt */
+    }
+
+    .input-icons {
+
+        width: 25px;
+        height: 20px;
+        position: absolute;
+
+
+        .icon-password {
+            color: white;
+        }
+    }
+
+    .password-label {
+        width: 100px;
+        position: absolute;
+        left: 36px;
+        top: 5px;
+        color: #F6E8EA;
+        font-size: 17px;
+        font-family: "Red Hat Display";
+        font-weight: 700;
+    }
+}
+
+.account-link {
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 347px;
+    font-family: "Poppins";
+    font-weight: 500;
+    text-align: center;
+
+    span {
+        color: #F6E8EA;
+        font-size: 15px;
+    }
+
+    .sign-up-link {
+        color: #FF8682;
+        margin-left: 10px;
+    }
+}
+
+.social-login {
+    width: 450px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 430px;
+    justify-items: center;
+
+    .social-login-text {
+        width: 100px;
+        text-align: center;
+        color: #F6E8EA;
+        font-size: 15px;
+        font-family: 'Poppins';
+        font-weight: 500;
+    }
+
+    .separator {
+        width: 100px;
+        height: 0;
+        position: absolute;
+        border: 1px #F6E8EA solid;
+    }
+
+    .left {
+        margin-left: -114px;
+        margin-top: 8px;
+    }
+
+    .right {
+        margin-left: 14px;
+        margin-top: 8px;
+    }
+}
+
+.google-login-button {
+    width: 437px;
+    height: 35px;
+    position: absolute;
+    left: 6.06px;
+    top: 461px;
+    justify-content: center;
+    display: flex;
+    border: solid 1px white;
+    border-radius: 6px;
+
+    .google-login-background {
+        width: 437px;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px #F6E8EA solid;
+    }
+
+    .google-login-icons {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 6px;
+
+        .google-icon {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            color: white;
+        }
+    }
+}

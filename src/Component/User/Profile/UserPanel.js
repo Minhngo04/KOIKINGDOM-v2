@@ -8,8 +8,8 @@ const UserPanel = ({ brand, username }) => {
 
     const handleNavigation = (type) => {
         switch (type) {
-            case 'profile':
-                navigate('/myProfile')
+            case 'login':
+                navigate('/login')
                 break;
         }
     }
@@ -20,7 +20,7 @@ const UserPanel = ({ brand, username }) => {
             onMouseEnter={() => setShowTooltip(true)}
             onMouseLeave={() => setShowTooltip(false)}
         >
-            <div className="userBrand" onClick={() => handleNavigation('profile')}>
+            <div className="userBrand" onClick={() => handleNavigation('login')}>
                 {brand && <span className="icon">{brand}</span>}
             </div>
             {showTooltip && (
