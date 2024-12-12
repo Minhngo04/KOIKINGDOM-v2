@@ -8,7 +8,7 @@ const ProfileSidebar = () => {
         { label: 'Add To Cart', id: 'cart', path: '/myCard' },
         { label: 'Farourite', id: 'favorites' },
         { label: 'My Booking', id: 'bookings', path: '/myBooking' },
-        { label: 'My Koi Fish', id: 'koi' },
+        { label: 'My Koi Fish', id: 'koi', path: '/myKoiOrder' },
         { label: 'Change Password', id: 'password' }
     ];
     const handleNavigation = (path) => {

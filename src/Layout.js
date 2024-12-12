@@ -8,7 +8,7 @@ import OrderKoiPage from './Component/User/Booking/OrderKoi.js';
 import MyProfile from './Component/User/Profile/MyProfile/Profile.js';
 import MyCard from './Component/User/Profile/MyCard.js';
 import MyBooking from './Component/User/Profile/MyBooking/MyBooking.js'
-
+import MyKoiOrder from './Component/User/Profile/MyKoiOrder/MyKoiOrder.js'
 const NotFound = () => {
     return (
         <div className="container mt-3 alert alert-danger">
@@ -28,6 +28,7 @@ const Layout = () => {
                 <Route path="myProfile" element={<MyProfile />} />
                 <Route path="myCard" element={<MyCard />} />
                 <Route path="myBooking" element={<MyBooking />} />
+                <Route path="myKoiOrder" element={<MyKoiOrder />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>

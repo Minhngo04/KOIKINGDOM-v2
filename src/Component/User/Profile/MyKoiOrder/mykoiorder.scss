@@ -1,0 +1,67 @@
+.koi-order-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 865px;
+    margin: 114px auto 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 400px;
+        padding: 2rem;
+
+
+        .koi-order-info {
+            display: flex;
+            align-items: center;
+            gap: 49px;
+
+            .koi-order-detail {
+                display: flex;
+                flex-direction: column;
+                margin-left: 2px; // Sát hình ảnh
+                gap: 8px;
+
+                .koi-order-name {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #22181C;
+                }
+
+                .koi-order-type,
+                .koi-order-price {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #22181C;
+                }
+            }
+        }
+
+        .koi-order-box {
+            display: flex;
+            flex-direction: column;
+            gap: 58px;
+
+            .showdetail {
+                text-align: center;
+                color: black;
+                font-size: 18px;
+                font-family: Inter;
+                font-weight: 400;
+                word-wrap: break-word;
+                border: 2px solid;
+                border-radius: 11px;
+            }
+        }
+
+        .koi-order-date {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #22181C;
+        }
+    }
+}
