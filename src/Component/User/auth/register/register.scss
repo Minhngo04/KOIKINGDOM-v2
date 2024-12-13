@@ -1,0 +1,454 @@
+$primary-color: rgba(246, 232, 234, 1);
+$secondary-color: rgba(34, 24, 28, 1);
+$accent-color: rgba(244, 91, 105, 1);
+$text-color: rgba(255, 255, 255, 1);
+$border-color: rgba(0, 0, 0, 1);
+
+.outer-container {
+    height: 100vh;
+    background-color: #F6E8EA;
+
+    .login-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+
+        .auth-image {
+            width: 450px;
+            height: 702px;
+            position: relative;
+            left: 1.25px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        .login-form-container {
+            background: #22181C;
+            padding: 35px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            .login-form {
+                height: 632px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                top: -8px;
+
+                .auth-logo {
+                    height: 100px;
+                }
+
+                .tittle {
+                    color: white;
+                    font-size: 20px;
+                    justify-self: center;
+                }
+
+                .container-loginform {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 21px;
+                    margin-top: 30px;
+
+                    .form-row {
+                        display: flex;
+                        gap: 8px;
+
+                        .input-wrapper {
+                            flex: 1 1;
+                            position: relative;
+                            border: 1px solid #fff;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+
+                            .input-label {
+                                position: absolute;
+                                top: -8px;
+                                left: 7px;
+                                background-color: #22181C;
+                                padding: 0 7px;
+                                color: rgb(244, 91, 105);
+                                font-size: 15px;
+                            }
+
+                            .input-field {
+                                border: none;
+                                background: transparent;
+                                font: 400 16px Inter, sans-serif;
+                                height: 38px;
+                                color: white;
+                                position: relative;
+                                margin-left: 5px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+
+                            .input-field option {
+                                background-color: #22181C;
+                                color: white;
+                                padding: 8px;
+                                margin: 0;
+                            }
+
+                            .input-field:focus {
+                                outline: none;
+                            }
+
+                            .input-field #lastName,
+                            #firstName {
+                                width: 96%;
+                            }
+
+                            .input-field #email {
+                                width: 95%;
+                            }
+                        }
+
+                    }
+
+                    .input-wrapper {
+                        flex: 1 1;
+                        position: relative;
+                        border: 1px solid #fff;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+
+                        .input-label {
+                            position: absolute;
+                            top: -8px;
+                            left: 7px;
+                            background-color: #22181C;
+                            padding: 0 7px;
+                            color: rgb(244, 91, 105);
+                            font-size: 15px;
+                        }
+
+                        .input-field {
+                            border: none;
+                            background: transparent;
+                            font: 400 16px Inter, sans-serif;
+                            height: 38px;
+                            color: white;
+                            position: relative;
+                            margin-left: 5px;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .eye-icon-container {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                        }
+
+                        .eye-icon {
+                            color: white;
+                        }
+
+                        .input-field option {
+                            background-color: #22181C;
+                            color: white;
+                            padding: 8px;
+                            margin: 0;
+                        }
+
+
+                        .input-field:focus {
+                            outline: none;
+                        }
+
+                        .input-field #lastName,
+                        #firstName {
+                            width: 96%;
+                        }
+
+                        .input-field #email {
+                            width: 95%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.form-header {
+    width: 450px;
+    height: 20px;
+    position: relative;
+    left: 14.06px;
+
+    .remember-me,
+    .forgot-password {
+        color: #F6E8EA;
+        font-size: 12px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        word-wrap: break-word;
+        position: absolute;
+    }
+
+    .remember-me {
+        width: 120px;
+        left: 40px;
+        top: 5px;
+    }
+
+    .forgot-password {
+        width: 150px;
+        left: 270px;
+        top: 5px;
+        text-align: right;
+    }
+
+    .separator-line {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border: 1px #F6E8EA solid;
+    }
+}
+
+
+
+
+
+
+
+
+.container-interaction {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .login-button {
+        width: 437px;
+        height: 35px;
+        position: relative;
+        left: 6.06px;
+        border-radius: 5px;
+        border: 1px #F6E8EA solid;
+        color: white;
+        font-size: 19px;
+        text-align: center
+    }
+
+    .login-title {
+        width: 100%;
+        position: absolute;
+        top: 137px;
+        text-align: center;
+        color: #F6E8EA;
+        font-size: 16px;
+        font-family: 'Red Hat Display';
+        font-weight: 700;
+    }
+
+    // .email-input-group {
+    //     width: 404px;
+    //     height: 32px;
+    //     position: absolute;
+    //     left: 23.06px;
+    //     top: 172px;
+    //     border-bottom: 2px solid white;
+
+    //     .email-input {
+    //         width: 367px;
+    //         height: 25px;
+    //         color: white;
+    //         font-size: 20px;
+    //         background: #22181C;
+    //         position: absolute;
+    //         left: 29px;
+    //         outline: none;
+    //         border: none;
+    //     }
+
+    //     .input-icons {
+    //         width: 25px;
+    //         height: 20px;
+    //         position: absolute;
+
+    //         .icon-user {
+    //             color: white;
+    //         }
+    //     }
+
+    //     .email-label {
+    //         width: 100px;
+    //         position: absolute;
+    //         left: 36px;
+    //         top: 5px;
+    //         color: #F6E8EA;
+    //         font-size: 17px;
+    //         font-family: "Red Hat Display";
+    //         font-weight: 700;
+    //     }
+    // }
+
+
+
+    .password-input-group {
+        width: 404px;
+        height: 32px;
+        position: absolute;
+        left: 23.06px;
+        top: 247px;
+        border-bottom: 2px solid white;
+
+        .password-input {
+            width: 367px;
+            height: 25px;
+            background: #22181C;
+            position: absolute;
+            left: 29px;
+            font-size: 20px;
+            color: white;
+            outline: none;
+            border: none;
+        }
+
+        .eye-icon-container {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .eye-icon {
+            color: white;
+            /* Đặt màu trắng cho icon mắt */
+        }
+
+        .input-icons {
+
+            width: 25px;
+            height: 20px;
+            position: absolute;
+
+
+            .icon-password {
+                color: white;
+            }
+        }
+
+        .password-label {
+            width: 100px;
+            position: absolute;
+            left: 36px;
+            top: 5px;
+            color: #F6E8EA;
+            font-size: 17px;
+            font-family: "Red Hat Display";
+            font-weight: 700;
+        }
+    }
+
+    .account-link {
+        width: 100%;
+        height: 15px;
+        position: relative;
+        font-family: "Poppins";
+        font-weight: 500;
+        text-align: center;
+
+        span {
+            color: #F6E8EA;
+            font-size: 15px;
+        }
+
+        .sign-up-link {
+            color: #FF8682;
+            margin-left: 10px;
+        }
+    }
+
+    .social-login {
+        width: 450px;
+        height: 25px;
+        position: relative;
+        left: 0;
+        justify-items: center;
+
+        .social-login-text {
+            width: 100px;
+            text-align: center;
+            color: #F6E8EA;
+            font-size: 15px;
+            font-family: 'Poppins';
+            font-weight: 500;
+        }
+
+        .separator {
+            width: 100px;
+            height: 0;
+            position: absolute;
+            border: 1px #F6E8EA solid;
+        }
+
+        .left {
+            margin-left: -114px;
+            margin-top: 8px;
+        }
+
+        .right {
+            margin-left: 14px;
+            margin-top: 8px;
+        }
+    }
+
+    .google-login-button {
+        width: 437px;
+        height: 35px;
+        position: relative;
+        left: 6.06px;
+        justify-content: center;
+        display: flex;
+        border: solid 1px white;
+        border-radius: 6px;
+
+        .google-login-background {
+            width: 437px;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px #F6E8EA solid;
+        }
+
+        .google-login-icons {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 6px;
+
+            .icon-google {
+                height: 24px;
+                position: absolute;
+                color: white;
+            }
+        }
+    }
+}

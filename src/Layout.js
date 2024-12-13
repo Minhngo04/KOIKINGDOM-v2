@@ -9,7 +9,7 @@ import MyProfile from './Component/User/Profile/MyProfile/Profile.js';
 import MyCard from './Component/User/Profile/MyCard.js';
 import MyBooking from './Component/User/Profile/MyBooking/MyBooking.js'
 import MyKoiOrder from './Component/User/Profile/MyKoiOrder/MyKoiOrder.js'
-import Login from './Component/User/auth/login/login.js';
+import Register from './Component/User/auth/register/register.js';
 
 const NotFound = () => {
     return (
@@ -34,7 +34,7 @@ const Layout = () => {
 
                 <Route path="*" element={<NotFound />} />
             </Route>
-            <Route path="login" element={< Login />} />
+            <Route path="register" element={< Register />} />
         </Routes>
     );
 };
